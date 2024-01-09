@@ -1,0 +1,38 @@
+.slick-next {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  right: -40px;
+
+  img {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.slick-prev {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  left: -40px;
+
+  img {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.slick-prev:before {
+  content: none;
+}
+.slick-next:before {
+  content: none;
+}

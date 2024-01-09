@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "AXIAS PRO";
+  src: url("./fonts/AxiosPro-Book.otf");
+}
+
+@layer components {
+  .nav-links {
+    @apply uppercase h-[50px] text-[#0F242C] font-[500] text-[13.5px] tracking-[1px] px-[10px] hover:text-[#07d8b4] hover:transition hover:duration-500 relative after:absolute after:border-r-[1px] after:border-[#E3E3E3] after:h-[50px] after:top-0 after:right-0 flex items-center after:last:border-0;
+  }
+
+  .dropdown-icon {
+    @apply h-[16px] px-[5px];
+  }
+
+  .header-btn {
+    @apply bg-[#07D8B4] rounded-full h-[45px] px-[15px] flex items-center justify-center uppercase text-[14px] font-[400] text-white;
+  }
+
+  .submenu-wrap {
+    @apply absolute top-[40px] w-[230px] flex-col items-start bg-white hidden;
+  }
+
+  .submenu {
+    @apply text-black hover:bg-[#07d8b4] text-[14px] font-[400] w-full px-[20px] py-[10px] hover:text-white transition-all delay-75;
+  }
+
+  .mobile-link-wrap {
+    @apply pl-[30px] pr-[15px] flex flex-col items-start;
+  }
+
+  .mobile-nav-links {
+    @apply py-[7px] uppercase h-[50px] text-[#767676] font-[500] text-[13.5px] tracking-[1px] hover:text-[#3A51CA] hover:transition hover:duration-500 relative flex items-center justify-between w-full;
+  }
+
+  .mobile-submenu-wrap {
+    @apply absolute top-[40px] w-[230px] flex-col items-start bg-white hidden;
+  }
+
+  .mobile-submenu {
+    @apply text-black hover:bg-[#07d8b4] text-[14px] font-[400] w-full px-[20px] py-[10px] hover:text-white transition-all delay-75;
+  }
+
+  .btn {
+    @apply text-[16px] font-[400] text-white rounded-full py-[15px] px-[30px] bg-[#07d8b4] shadow shadow-black/30 hover:scale-110 transition-all;
+  }
+
+  .footer-social-wrap {
+    @apply flex items-center p-[30px] gap-5 bg-[#54c1f0];
+  }
+
+  .footer-social-icon {
+    @apply flex items-center justify-center h-[45px] w-[45px] rounded-full bg-white cursor-pointer hover:bg-[#0f141a];
+  }
+}
+
+.nav-links:hover {
+  transition: all 1s;
+  .submenu-wrap {
+    display: flex;
+    z-index: 1;
+  }
+}
+
+.mobile-nav-links:focus,
+.mobile-nav-links:hover {
+  transition: all 1s;
+  .mobile-submenu-wrap {
+    display: flex;
+    z-index: 1;
+  }
+}
+
+body {
+  background: #f8f8f8;
+}
+
+.footer-social-wrap {
+  .footer-social-icon {
+    img {
+      height: 25px;
+    }
+  }
+
+  div {
+    height: 45px;
+  }
+}
+
+.hr {
+  width: 180px;
+  border: 1px solid white;
+  margin: 5px 0 20px 0;
+}

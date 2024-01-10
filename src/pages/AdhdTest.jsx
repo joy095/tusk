@@ -118,7 +118,7 @@ const AdhdTest = () => {
             borderColor: "#27627e",
             height: 30,
             width: 30,
-            marginLeft: -5,
+            marginLeft: 0,
             marginTop: -10,
             backgroundColor: "#27627e",
           }}

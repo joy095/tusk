@@ -6,7 +6,7 @@ import FooterPhone from "../assets/icons/footer-phone.svg";
 const Footer = () => {
   return (
     <footer className="bg-[#2bb2ed] pt-[48px] pb-[32px] block mt-[50px] p-5">
-      <div className="max-w-[1100px] mx-auto">
+      <div className="max-w-[1260px] mx-auto">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 grid-cols-1 h-[100px] bg-[#54c1f0]">
           <div className="footer-social-wrap">
             <div className="footer-social-icon">

@@ -84,7 +84,7 @@ const Home = () => {
 
       <section className="max-w-[1140px] mx-auto flex md:flex-row justify-between flex-col py-16 bottom-image">
         <div className="md:w-[50%] md:max-h-[500px] relative">
-          <div className="flex flex-row justify-center md:justify-end flex-wrap gap-3 h-[486px] pt-5 pb-10 pr-5 right-10 relative after:absolute after:top-0 after:bottom-0 after:left-[66%] after:w-[200px] after:h-full after:bg-[#ACDCFE] after:-z-10">
+          <div className="flex flex-row justify-center md:justify-end flex-nowrap gap-3 h-[486px] pt-5 pb-10 pr-5 right-10 relative after:absolute after:top-0 after:bottom-0 after:left-[66%] after:w-[200px] after:h-full after:bg-[#ACDCFE] after:-z-10">
             <div className="">
               <img
                 className="w-[227px] h-[40%] object-cover"
@@ -119,7 +119,7 @@ const Home = () => {
             Precision treatment{" "}
             <span className="bg-image-color">tailored to the individual</span>
           </h1>
-          <p className="max-w-[454px] text-justify">
+          <p className="md:max-w-[454px] text-justify">
             We provide licensed therapists, online counseling, self-help tools
             (e.g., mindfulness exercises), educational materials, and support
             groups for mental health support. Our goal is to promote mental

@@ -17,7 +17,7 @@
   }
 
   .header-btn {
-    @apply bg-[#07D8B4] rounded-full h-[45px] px-[15px] flex items-center justify-center uppercase text-[14px] font-[400] text-white;
+    @apply bg-[#07D8B4] rounded-full h-[40px] px-[15px] flex items-center justify-center uppercase text-[14px] font-[400] text-white;
   }
 
   .submenu-wrap {

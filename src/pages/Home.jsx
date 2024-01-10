@@ -1,11 +1,15 @@
 import SimpleImageSlider from "react-simple-image-slider";
-import "./Home.css";
-import starIcon from "../assets/icons/star.svg";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+import starIcon from "../assets/icons/star.svg";
+import btnArrowIcon from "../assets/icons/btn-arrow.svg";
+
+import Slider from "react-slick";
 import NextArrow from "../components/NextArrow";
 import PrevArrow from "../components/PrevArrow";
+
+import "./Home.css";
 import SideSocialLinks from "../components/SideSocialLinks";
 
 const Home = () => {
@@ -56,10 +60,10 @@ const Home = () => {
 
   return (
     <>
-      <section className="relative">
+      <section className="relative z-0">
         <div className="absolute container max-w-[1020px] mx-auto z-10 left-0 right-0  top-[20%]">
           <div className="max-w-[475px] flex flex-col justify-between items-start gap-8">
-            <h1 className="text-[57px] text-white font-bold">
+            <h1 className="text-[46px] md:text-[57px] text-white font-bold">
               Prioritizing Your Mental Wellness
             </h1>
             <p className="textl-[21px] font-[500] text-white">
@@ -80,7 +84,7 @@ const Home = () => {
 
       <section className="max-w-[1140px] mx-auto flex md:flex-row justify-between flex-col py-16 bottom-image">
         <div className="md:w-[50%] md:max-h-[500px] relative">
-          <div className="flex flex-row justify-end flex-wrap gap-3 h-[486px] pt-5 pb-10 pr-5 right-10 relative after:absolute after:top-0 after:bottom-0 after:left-[66%] after:w-[200px] after:h-full after:bg-[#ACDCFE] after:-z-10">
+          <div className="flex flex-row justify-center md:justify-end flex-wrap gap-3 h-[486px] pt-5 pb-10 pr-5 right-10 relative after:absolute after:top-0 after:bottom-0 after:left-[66%] after:w-[200px] after:h-full after:bg-[#ACDCFE] after:-z-10">
             <div className="">
               <img
                 className="w-[227px] h-[40%] object-cover"
@@ -109,7 +113,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="md:w-[50%] flex flex-col justify-between gap-6 items-start">
+        <div className="md:w-[50%] flex flex-col justify-between gap-6 items-start p-5">
           <h6 className="text-[20px] font-[300]">What We Offer</h6>
           <h1 className="text-[42px] font-[400] md:max-w-[455px]">
             Precision treatment{" "}
@@ -127,12 +131,12 @@ const Home = () => {
       </section>
 
       <section className="bg-image relative">
-        <div className="max-w-[1020px] mx-auto py-3 z-10 relative">
+        <div className="max-w-[1020px] mx-auto py-3 z-10 relative p-5">
           <h1 className="max-w-fit mx-auto text-[42px] font-[400] text-center bg-image-color">
             What We Do
           </h1>
 
-          <div className="flex flex-row flex-wrap justify-between gap-5 pt-[30px]">
+          <div className="flex md:flex-row flex-col flex-wrap justify-between items-center gap-5 pt-[30px]">
             <div className="card">
               <img
                 src="https://firstmentalhealth.co.uk/wp-content/uploads/2023/05/children-1.png"
@@ -175,12 +179,12 @@ const Home = () => {
 
       <section className="bg-image-1">
         <div className="md:max-w-[1020px] mx-auto">
-          <div className="box-card md:top-[115px] w-auto p-5">
+          <div className="box-card md:top-[115px] w-auto p-1 md:p-5 pt-[30%]">
             <span className="text-center text-[21px] font-[300]">
               Book Consultation
             </span>
 
-            <h1 className="text-[42px] font-[400] text-center">
+            <h1 className="text-[24px] sm:text-[32px] md:text-[42px] font-[400] text-center">
               Transform Your Mental Health:
               <br />
               Effective
@@ -189,12 +193,17 @@ const Home = () => {
               </span>
             </h1>
 
-            <button className="btn">Click Here</button>
+            <button className="btn px-2 py-1 sm:px-[10px] sm:py-[6px] md:py-[15px] md:px-[30px] flex items-center gap-1">
+              Click Here{" "}
+              <span>
+                <img className="w-5" src={btnArrowIcon} alt="" />
+              </span>
+            </button>
           </div>
         </div>
       </section>
 
-      <section className="max-w-[1020px] mx-auto md:flex md:flex-row py-16">
+      <section className="max-w-[1020px] mx-auto md:flex md:flex-row py-16 p-5">
         <div className="md:w-[40%] relative after:absolute after:top-0 after:bottom-0 after:left-0 after:w-[200px] after:h-full after:bg-[#ACDCFE] after:-z-10">
           <img
             src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202306/6_0-three_four.jpg?VersionId=1QZHYclbfWXoLF9Lz8plZ1WtfTn3eFUk"
@@ -207,7 +216,7 @@ const Home = () => {
           <span className="text-[42px] font-[400] max-w-fit bg-image-color">
             What member are saying.
           </span>
-          <div>
+          <div className="px-10">
             <Slider {...settings}>
               <div className="!flex flex-col items-center justify-center pt-[50px] p-6 box-shadow bg-white gap-5">
                 <img

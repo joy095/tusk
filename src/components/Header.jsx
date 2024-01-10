@@ -13,7 +13,7 @@ const Header = () => {
       <nav className="flex items-center justify-between h-[70px] p-[10px]">
         <div>
           <Link to="/">
-            <img className="w-[180px] sm:w-[255px]" src={Logo} loading="lazy" />
+            <img className="w-[180px] sm:w-[230px]" src={Logo} loading="lazy" />
           </Link>
         </div>
         <div className="hidden lg:flex items-center">
@@ -59,7 +59,7 @@ const Header = () => {
             <img className="dropdown-icon" src={dropdownIcon} alt="" />
           </NavLink>
         </div>
-        <div className="hidden lg:flex items-center gap-[30px]">
+        <div className="hidden lg:flex items-center gap-[10px]">
           <Link className="header-btn">sign in</Link>
           <Link className="header-btn">
             <img className="h-[13px] pr-1" src={phoneIcon} alt="" />
@@ -101,7 +101,10 @@ const Header = () => {
               service
             </NavLink>
             <div className="mobile-nav-links">
-              <NavLink to="online-test">
+              <NavLink
+                to="online-test"
+                className="flex justify-between flex-grow"
+              >
                 online test
                 <img
                   className="dropdown-icon flex items-end"

@@ -36,3 +36,6 @@
 .slick-next:before {
   content: none;
 }
+
+@media (min-width: 768px) {
+}

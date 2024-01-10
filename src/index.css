@@ -9,7 +9,7 @@
 
 @layer components {
   .nav-links {
-    @apply uppercase h-[50px] text-[#0F242C] font-[500] text-[13.5px] tracking-[1px] px-[10px] hover:text-[#07d8b4] hover:transition hover:duration-500 relative after:absolute after:border-r-[1px] after:border-[#E3E3E3] after:h-[50px] after:top-0 after:right-0 flex items-center after:last:border-0;
+    @apply uppercase h-[50px] text-[#0F242C] font-[500] text-[12px] tracking-[1px] px-[5px] hover:text-[#07d8b4] hover:transition hover:duration-500 relative after:absolute after:border-r-[1px] after:border-[#E3E3E3] after:h-[50px] after:top-0 after:right-0 flex items-center after:last:border-0;
   }
 
   .dropdown-icon {

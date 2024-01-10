@@ -62,11 +62,11 @@ const Home = () => {
     <>
       <section className="relative z-0">
         <div className="absolute container max-w-[1020px] mx-auto z-10 left-0 right-0  top-[20%]">
-          <div className="max-w-[475px] flex flex-col justify-between items-start gap-8">
-            <h1 className="text-[46px] md:text-[57px] text-white font-bold">
+          <div className="max-w-[475px] flex flex-col justify-between items-start gap-8 p-5">
+            <h1 className="text-[40px] md:text-[57px] text-white font-bold">
               Prioritizing Your Mental Wellness
             </h1>
-            <p className="textl-[21px] font-[500] text-white">
+            <p className="text-[21px] font-[500] text-white">
               Discover Resources and Support From Our Professionals
             </p>
             <button className="btn">Book An Appointment</button>
@@ -178,7 +178,7 @@ const Home = () => {
       </section>
 
       <section className="bg-image-1">
-        <div className="md:max-w-[1020px] mx-auto">
+        <div className="md:max-w-[1020px] mx-auto p-5">
           <div className="box-card md:top-[115px] w-auto p-1 md:p-5 pt-[30%]">
             <span className="text-center text-[21px] font-[300]">
               Book Consultation
@@ -208,7 +208,7 @@ const Home = () => {
           <img
             src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202306/6_0-three_four.jpg?VersionId=1QZHYclbfWXoLF9Lz8plZ1WtfTn3eFUk"
             alt=""
-            className="rounded-lg p-5"
+            className="rounded-[30px] p-5"
           />
         </div>
         <div className="md:pl-10 md:w-[60%]">

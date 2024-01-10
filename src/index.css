@@ -45,7 +45,7 @@
   }
 
   .btn {
-    @apply text-[16px] font-[400] text-white rounded-full py-[15px] px-[30px] bg-[#07d8b4] shadow shadow-black/30 hover:scale-110 transition-all;
+    @apply text-[16px] font-[400] text-white rounded-full py-[10px] md:py-[15px] px-5 md:px-[30px] bg-[#07d8b4] shadow shadow-black/30 hover:scale-110 transition-all;
   }
 
   .footer-social-wrap {

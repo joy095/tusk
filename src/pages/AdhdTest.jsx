@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Slider from "rc-slider";
+import "rc-slider/assets/index.css";
 
 const AdhdTest = () => {
   const arrayOfQuestions = [
@@ -103,6 +105,24 @@ const AdhdTest = () => {
             </div>
           </>
         )}
+      </div>
+      <div className="mx-auto w-[700px]">
+        <Slider
+          value={currentQuestion}
+          defaultValue={0}
+          min={0}
+          max={arrayOfQuestions.length - 1}
+          trackStyle={{ backgroundColor: "#27627e", height: 10 }}
+          railStyle={{ backgroundColor: "#dddddd", height: 10 }}
+          handleStyle={{
+            borderColor: "#27627e",
+            height: 30,
+            width: 30,
+            marginLeft: -5,
+            marginTop: -10,
+            backgroundColor: "#27627e",
+          }}
+        />
       </div>
     </div>
   );

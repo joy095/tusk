@@ -70,8 +70,6 @@ const AdhdTest = () => {
     }
   };
 
-  const showHanldeNumber = document.getElementsByClassName("rc-slider-handle");
-
   return (
     <div>
       <div className="bg-[#ACDCFE] py-16">
@@ -80,7 +78,7 @@ const AdhdTest = () => {
         </h1>
       </div>
 
-      <div className="adhd-test-box md:h-[300px] w-[800px] flex flex-col justify-evenly items-center">
+      <div className="adhd-test-box md:h-[300px] md:w-[800px] w-[90%] flex flex-col justify-evenly items-center p-5">
         {showScore ? (
           <div className="">
             Your results are highly consistent with ADHD <br />
@@ -108,7 +106,7 @@ const AdhdTest = () => {
           </>
         )}
       </div>
-      <div className="mx-auto w-[700px]">
+      <div className="mx-auto md:w-[700px] p-5">
         <Slider
           value={currentQuestion}
           defaultValue={0}

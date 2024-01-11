@@ -82,10 +82,10 @@ const Home = () => {
         />
       </section>
 
-      <section className="max-w-[1140px] mx-auto flex md:flex-row justify-between flex-col py-16 bottom-image">
-        <div className="md:w-[50%] md:max-h-[500px] relative">
-          <div className="flex flex-row justify-center md:justify-end flex-nowrap gap-3 h-[486px] pt-5 pb-10 pr-5 right-10 relative after:absolute after:top-0 after:bottom-0 after:left-[66%] after:w-[200px] after:h-full after:bg-[#ACDCFE] after:-z-10">
-            <div className="">
+      <section className="max-w-[1140px] mx-auto flex md:flex-row justify-between flex-col py-16">
+        <div className="md:w-[50%] max-h-[300px] sm:max-h-[400px] md:max-h-[500px] relative overflow-hidden">
+          <div className="flex flex-row justify-center md:justify-end flex-nowrap gap-3 h-[486px] pt-5 pb-10 pr-5 right-10 relative after:absolute after:top-0 after:bottom-0 after:left-[66%] after:w-[200px] after:h-[340px] sm:after:h-[450px] md:after:h-full after:bg-[#ACDCFE] after:-z-10">
+            <div className="max-h-[300px] sm:max-h-[400px] md:max-h-[500px]">
               <img
                 className="w-[227px] h-[40%] object-cover"
                 src="https://jpeg.org/images/jpeg-home.jpg"
@@ -98,7 +98,7 @@ const Home = () => {
                 className="pt-3 w-[227px] h-[60%] object-cover"
               />
             </div>
-            <div className="">
+            <div className="max-h-[300px] sm:max-h-[400px] md:max-h-[500px]">
               <img
                 className="w-[227px] h-[60%] object-cover"
                 src="https://media.istockphoto.com/id/184266033/photo/forest.jpg?s=612x612&w=0&k=20&c=NxnOuxGeg2IPP9qz9bpTkcQaHufGnGBmUOXPllKJ4Lk="

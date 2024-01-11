@@ -70,6 +70,8 @@ const AdhdTest = () => {
     }
   };
 
+  const showHanldeNumber = document.getElementsByClassName("rc-slider-handle");
+
   return (
     <div>
       <div className="bg-[#ACDCFE] py-16">

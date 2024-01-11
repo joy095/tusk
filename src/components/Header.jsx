@@ -113,7 +113,7 @@ const Header = () => {
                 />
               </NavLink>
               <span className="mobile-submenu-wrap">
-                <NavLink to="/online-test/adha-test" className="mobile-submenu">
+                <NavLink to="/online-text/adhd-text" className="mobile-submenu">
                   ADHD Test
                 </NavLink>
                 <NavLink
